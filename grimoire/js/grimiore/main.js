@@ -48,15 +48,26 @@ function main() {
   };
   let evilSpells = SpellBook.makeEvilSpellBook();
   let goodSpells = SpellBook.makeGoodSpellBook();
+
+  let goodbook = {
+    title: "Good Book",
+    spells: goodSpells,
+  };
+
+  let evilBook = {
+    title: "Evil Book",
+    spells: evilSpells,
+  };
+
   console.log("Do you believe in magic?");
   console.log("------------------------");
-  console.log("Good Book");
-  goodSpells.forEach((spell) => {
+  console.log(goodbook.title);
+  goodbook.spells.forEach((spell) => {
     console.log(spell.name);
   });
   console.log("");
-  console.log("Evil Book");
-  evilSpells.forEach((spell) => {
+  console.log(evilBook.title);
+  evilBook.spells.forEach((spell) => {
     console.log(spell.name);
   });
 }
