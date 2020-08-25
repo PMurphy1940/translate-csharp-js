@@ -30,7 +30,8 @@ namespace Insulter
 
             do
             {
-                n = rnd.Next(1, 6);
+                n = (rnd.Next(1, 6) - 1);
+                Console.WriteLine(n);
                 if (!numbers.Contains(n))
                 {
                     numbers.Add(n);
