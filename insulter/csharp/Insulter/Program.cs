@@ -8,9 +8,10 @@ namespace Insulter
         static void Main(string[] args)
         {
 
-            string[] insults;
+            // string[] insults;
+            List<string> insults = new List<string>()
 
-            insults = new string[]
+            // insults = new string[]
             {
                 "You look like what morning breath smells like.",
                 "If you tried to give me cpr I would probably throw myself back under water",
@@ -30,7 +31,7 @@ namespace Insulter
 
             do
             {
-                n = (rnd.Next(1, 6) - 1);
+                n = rnd.Next(0, insults.Count);
                 Console.WriteLine(n);
                 if (!numbers.Contains(n))
                 {
