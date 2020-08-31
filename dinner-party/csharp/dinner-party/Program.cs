@@ -14,8 +14,6 @@ namespace dinner_party {
             List<DinnerGuest> table1 = new List<DinnerGuest> ();
             List<DinnerGuest> table2 = new List<DinnerGuest> ();
 
-
-
             List<DinnerGuest> attendingTonight = new List<DinnerGuest> () {
                 new DinnerGuest () {
                         name = "Marilyn Monroe",
